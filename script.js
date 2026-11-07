@@ -38,7 +38,7 @@ if (moreArticles && additionalArticles) {
 
 const articleDetails = {
   domande: {
-    category: 'Riflessioni · Relazioni', title: 'Trauma e genitorialità', date: '12.03.2024', number: '01', image: 'image-quiet',
+    category: 'Riflessioni · Relazioni', title: 'Trauma e genitorialità', date: '10.10.2026', number: '01', image: 'image-quiet',
     paragraphs: [
       'Diventare genitori significa anche confrontarsi, spesso per la prima volta in modo molto intenso, con la propria storia. Nel rapporto con un figlio possono riemergere emozioni, paure, modalità relazionali e rappresentazioni che affondano le proprie radici nell\'infanzia.',
       'È anche da qui che nasce il legame tra **trauma infantile e genitorialità**.',
@@ -82,7 +82,7 @@ const articleDetails = {
     ]
   },
   corpo: {
-    category: 'Consapevolezza · Emozioni', title: 'Complesso di superiorità', date: '28.02.2024', number: '02', image: 'image-window',
+    category: 'Consapevolezza · Emozioni', title: 'Complesso di superiorità', date: '26.10.2026', number: '02', image: 'image-window',
     paragraphs: [
       'Sentirsi superiori agli altri non significa necessariamente sentirsi sicuri di sé. Nella prospettiva di Alfred Adler, dietro un atteggiamento di superiorità può nascondersi proprio il contrario: un profondo sentimento di inferiorità, insicurezza o inadeguatezza.',
       'È uno dei passaggi più interessanti della Psicologia Individuale, perché permette di guardare alcuni comportamenti apparentemente arroganti o competitivi da una prospettiva diversa: non soltanto ciò che la persona mostra, ma anche ciò che potrebbe cercare di compensare.',
@@ -128,7 +128,7 @@ const articleDetails = {
     ]
   },
   eredita: {
-    category: 'Legami · Famiglia', title: 'Le eredità invisibili che ci accompagnano', date: '09.01.2024', number: '03', image: 'image-hands',
+    category: 'Legami · Famiglia', title: 'Le eredità invisibili che ci accompagnano', date: '7.11.2026', number: '03', image: 'image-hands',
     paragraphs: [
       'Ci sono esperienze che appartengono al passato, ma che continuano a vivere nel presente. Un lutto, un abbandono, una violenza, una perdita improvvisa o un’esperienza profondamente traumatica possono lasciare una traccia che non si esaurisce con la persona che le ha vissute. In alcuni casi, infatti, ciò che non è stato elaborato può influenzare anche le generazioni successive, entrando nelle relazioni familiari e, in particolare, nel modo di essere genitori.',
       'È questo il tema del **trauma transgenerazionale**, una prospettiva che invita a guardare alla sofferenza individuale anche attraverso la storia della famiglia.',
