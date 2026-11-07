@@ -11,3 +11,68 @@ body.project-site {
   background: var(--pic-crema);
   color: var(--pic-prugna);
 }
+/* HERO PSICOINCUFFIA */
+body.project-site .project-hero-original {
+  background: #fff9f3;
+  color: #43263e;
+  min-height: 720px;
+  padding: 90px 8%;
+  grid-template-columns: 1fr 1fr;
+  gap: 5%;
+}
+
+body.project-site .project-hero-original::before {
+  background: #f5c7d6;
+  width: 380px;
+  height: 380px;
+  top: -180px;
+  right: -100px;
+  border-radius: 45% 55% 60% 40%;
+  opacity: .75;
+}
+
+body.project-site .project-hero-original h1 {
+  color: #43263e;
+  font-size: clamp(4rem, 8vw, 7rem);
+}
+
+body.project-site .project-hero-original h1 em {
+  color: #43263e;
+  background: linear-gradient(transparent 67%, #ddeb7e 67%);
+}
+
+body.project-site .project-kicker,
+body.project-site .project-hero-description,
+body.project-site .project-scroll-label {
+  color: #43263e;
+}
+
+body.project-site .project-visual::before {
+  content: "";
+  position: absolute;
+  width: 85%;
+  aspect-ratio: 1;
+  background: #ddeb7e;
+  border-radius: 48% 52% 62% 38%;
+  transform: rotate(-15deg);
+}
+
+body.project-site .visual-note {
+  color: #e65e96;
+}
+
+@media (max-width: 760px) {
+  body.project-site .project-hero-original {
+    display: block;
+    min-height: auto;
+    padding: 65px 6%;
+  }
+
+  body.project-site .project-visual {
+    height: 320px;
+  }
+
+  body.project-site .project-hero-original h1 {
+    font-size: clamp(3.5rem, 13vw, 5rem);
+  }
+}
