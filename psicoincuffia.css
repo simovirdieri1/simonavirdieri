@@ -245,3 +245,18 @@ body.project-site .project-visual .project-logo {
   height: auto;
   object-fit: contain;
 }
+/* ORDINE SEZIONI PSICOINCUFFIA */
+body.project-site main {
+  display: flex;
+  flex-direction: column;
+}
+
+body.project-site main > section {
+  width: 100%;
+}
+
+body.project-site .project-hero { order: 1; }
+body.project-site .project-manifesto { order: 2; }
+body.project-site .project-story { order: 3; }
+body.project-site .playlist-section { order: 4; }
+body.project-site .social-section { order: 5; }
