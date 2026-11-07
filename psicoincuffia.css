@@ -219,3 +219,29 @@ body.project-site .playlist-section > * {
     bottom: 0;
   }
 }
+/* LOGO GRANDE NELLA HERO */
+body.project-site .project-visual .pic-headphones {
+  display: none;
+}
+
+body.project-site .project-visual {
+  display: grid;
+  place-items: center;
+}
+
+body.project-site .project-visual .project-page-mark {
+  position: relative;
+  inset: auto;
+  width: min(85%, 360px);
+  height: auto;
+  margin: auto;
+  transform: none;
+  z-index: 5;
+}
+
+body.project-site .project-visual .project-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
