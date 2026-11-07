@@ -87,8 +87,8 @@ body.project-site .project-visual::before {
   display: block;
   position: absolute;
   z-index: -1;
-  width: min(95%, 430px);
-  height: min(95%, 430px);
+  width: min(95%, 310px);
+  height: min(95%, 310px);
   background: var(--pic-lime);
   border-radius: 45% 55% 57% 43% / 53% 42% 58% 47%;
   transform: rotate(-13deg);
@@ -96,8 +96,8 @@ body.project-site .project-visual::before {
 body.project-site .project-visual .project-page-mark {
   position: relative;
   inset: auto;
-  width: min(90%, 375px);
-  height: min(90%, 375px);
+  width: min(90%, 240px);
+  height: min(90%, 240px);
   margin: 0;
   z-index: 2;
   transform: none;
