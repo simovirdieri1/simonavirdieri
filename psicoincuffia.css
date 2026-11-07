@@ -1,1 +1,13 @@
+/* STILE DEDICATO A PSICOINCUFFIA */
 
+:root {
+  --pic-rosa: #f5c7d6;
+  --pic-lime: #ddeb7e;
+  --pic-crema: #fff9f3;
+  --pic-prugna: #43263e;
+}
+
+body.project-site {
+  background: var(--pic-crema);
+  color: var(--pic-prugna);
+}
