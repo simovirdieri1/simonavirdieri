@@ -76,3 +76,33 @@ body.project-site .visual-note {
     font-size: clamp(3.5rem, 13vw, 5rem);
   }
 }
+/* CUFFIE ROSA — HERO */
+body.project-site .project-visual {
+  position: relative;
+  isolation: isolate;
+}
+
+body.project-site .pic-headphones {
+  display: block;
+  position: relative;
+  z-index: 3;
+  width: min(100%, 520px);
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+  filter: drop-shadow(0 16px 24px rgba(67, 38, 62, 0.12));
+}
+
+body.project-site .project-page-mark {
+  position: absolute;
+  z-index: 4;
+  right: 0;
+  bottom: 0;
+  width: 110px;
+}
+
+@media (max-width: 760px) {
+  body.project-site .pic-headphones {
+    width: min(100%, 380px);
+  }
+}
