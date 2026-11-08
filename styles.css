@@ -215,8 +215,7 @@
 .project-site .manifesto-stamp{color:var(--mf-coral)}
 .project-site .manifesto-stamp{border-color:var(--mf-coral)}
 .project-site .playlist-card{background:var(--mf-mint)}
-.project-site .project-button,
-.project-site .nav-cta{background:var(--mf-blue);color:var(--mf-cream)}
+.project-site .project-button{background:var(--mf-blue);color:var(--mf-cream)}
 .project-site .project-button:hover,
 .project-site .nav-cta:hover,
 .project-site .social-card:hover{background:var(--mf-coral);color:var(--mf-blue)}
