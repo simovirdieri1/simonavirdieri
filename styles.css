@@ -323,3 +323,280 @@
   mix-blend-mode: normal;
   filter: none;
 }
+
+
+/* ================================================================
+   ANTEPRIMA 2026 — identità professionale (esclusa Psicoincuffia)
+   Palette crema e blu polvere, con accenti azzurro tenue. Roboto su tutte
+   le pagine professionali. Non toccare i selettori .project-site.
+   ================================================================ */
+body:not(.project-site) {
+  --ink: #55718a;
+  --muted: #536677;
+  --cream: #f9f5f0;
+  --sand: #f9f5f0;
+  --sage: #dce8f1;
+  --line: rgba(85,113,138,.19);
+  --pastel-green: #dce8f1;
+  --deep-green: #55718a;
+  --mid-green: #dce8f1;
+  --serif: 'Roboto', Arial, sans-serif;
+  --sans: 'Roboto', Arial, sans-serif;
+  background: var(--cream);
+  color: #222222;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+body:not(.project-site) h1,
+body:not(.project-site) h2,
+body:not(.project-site) h3,
+body:not(.project-site) .principle strong,
+body:not(.project-site) .brand span,
+body:not(.project-site) .quote,
+body:not(.project-site) .social-card strong {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #55718a;
+  letter-spacing: -.025em;
+}
+body:not(.project-site) h1,
+body:not(.project-site) .home-hero h1,
+body:not(.project-site) .page-intro h1,
+body:not(.project-site) .approach-intro h1,
+body:not(.project-site) .article-page-intro h1,
+body:not(.project-site) .contact-page h1,
+body:not(.project-site) .article-detail h1 {
+  font-size: clamp(2.6rem, 4.6vw, 3.85rem);
+  font-weight: 600;
+  line-height: 1.13;
+  letter-spacing: -.035em;
+}
+body:not(.project-site) h2,
+body:not(.project-site) .inner-section h2,
+body:not(.project-site) .article-detail .detail-content h2 {
+  font-size: clamp(2rem, 3.1vw, 2.85rem);
+  font-weight: 600;
+  line-height: 1.2;
+}
+body:not(.project-site) h3,
+body:not(.project-site) .full-article h2 {
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  line-height: 1.25;
+  font-weight: 600;
+}
+body:not(.project-site) em {font-style: normal; font-weight: 400;}
+body:not(.project-site) .site-header,
+body:not(.project-site) footer {
+  background: #fffdfb;
+  color: #222;
+  border-color: var(--line);
+}
+body:not(.project-site) .brand,
+body:not(.project-site) .main-nav {color: #222;}
+body:not(.project-site) .eyebrow,
+body:not(.project-site) .meta,
+body:not(.project-site) .section-number {color: #55718a;}
+body:not(.project-site) .site-header .nav-cta {
+  color: #55718a;
+  border-color: #55718a;
+}
+body:not(.project-site) .site-header .nav-cta:hover {background: #55718a; color: #fff;}
+body:not(.project-site) .button-dark,
+body:not(.project-site) .read-more {
+  background: #55718a;
+  color: #fff;
+  border-radius: 3px;
+}
+body:not(.project-site) .button-dark:hover,
+body:not(.project-site) .read-more:hover {background: #405c75; color: #fff;}
+body:not(.project-site) .button-light {
+  border-color: #55718a;
+  color: #55718a;
+}
+body:not(.project-site) .button-light:hover {background: #55718a; color: #fff;}
+body:not(.project-site) .hero,
+body:not(.project-site) .home-hero {
+  background: #f9f5f0;
+  color: #222;
+}
+body:not(.project-site) .home-hero {
+  min-height: min(690px, calc(100vh - 92px));
+  padding-top: 75px;
+  padding-bottom: 75px;
+  gap: 5vw;
+}
+body:not(.project-site) .home-hero .eyebrow,
+body:not(.project-site) .home-hero .hero-name {color: #55718a;}
+body:not(.project-site) .home-hero .hero-intro {color: #222; max-width: 480px;}
+body:not(.project-site) .home-hero h1 {max-width: 650px;}
+/* Desktop: fotografia più interna, senza essere tagliata a destra. */
+@media (min-width: 761px) {
+  body:not(.project-site) .home-hero .hero-art {transform: translateX(-1.5vw);}
+}
+/* Due righe distinte nella presentazione di Psicoincuffia in home. */
+body:not(.project-site) .project-preview .Psicoincuffia-title-line {
+  display: block;
+  white-space: normal;
+}
+body:not(.project-site) .hero-art {height: 460px;}
+body:not(.project-site) .hero-photo {
+  border-color: #fffdfb;
+  box-shadow: 0 20px 50px rgba(85,113,138,.15);
+  filter: saturate(.92);
+}
+body:not(.project-site) .orb-one {background: #dce8f1; opacity: .75;}
+body:not(.project-site) .orb-two {background: rgba(220,232,241,.35); border-color: #c8d9e6;}
+body:not(.project-site) .line-art {color: #dce8f1;}
+body:not(.project-site) .numbered-section {padding-top: 92px; padding-bottom: 92px;}
+body:not(.project-site) .numbered-section#approccio-preview,
+body:not(.project-site) .numbered-section.project-preview {background: #f9f5f0;}
+body:not(.project-site) .numbered-section#articoli-preview {background: #f9f5f0;}
+body:not(.project-site) .contact-band {background: #f9f5f0;}
+body:not(.project-site) .section-text,
+body:not(.project-site) .wide-copy,
+body:not(.project-site) .contact-layout > div:last-child {color: #222;}
+body:not(.project-site) .article-card {
+  background: #fffdfb;
+  border: 1px solid rgba(85,113,138,.11);
+  border-radius: 5px;
+  box-shadow: 0 12px 28px rgba(85,113,138,.07);
+  overflow: hidden;
+}
+body:not(.project-site) .article-card:nth-child(2) {background: #fdfbf8;}
+body:not(.project-site) .article-card:nth-child(3) {background: #fdfbf8;}
+body:not(.project-site) .project-preview .eyebrow,
+body:not(.project-site) .project-preview .wide-copy {color: #222;}
+body:not(.project-site) .home-project-mark .project-logo {filter: none; mix-blend-mode: normal;}
+body:not(.project-site) .page-intro {
+  background: #f9f5f0;
+  padding: 85px 10% 72px;
+  border-color: var(--line);
+}
+body:not(.project-site) .page-intro p,
+body:not(.project-site) .inner-section p,
+body:not(.project-site) .article-page-intro p {color: #222;}
+body:not(.project-site) .inner-section {padding: 84px 10%;}
+body:not(.project-site) .white-section {background: #f9f5f0;}
+body:not(.project-site) .sand {background: #f9f5f0;}
+body:not(.project-site) .principle {
+  background: #f9f5f0;
+  border: 1px solid rgba(85,113,138,.13);
+  border-radius: 6px;
+  box-shadow: 0 12px 25px rgba(85,113,138,.05);
+}
+body:not(.project-site) .principle:nth-child(2) {background: #fdfbf8;}
+body:not(.project-site) .principle:nth-child(3) {background: #fdfbf8;}
+body:not(.project-site) .principle strong {font-size: 1.45rem; font-weight: 600;}
+body:not(.project-site) .contact-page {
+  background: #f9f5f0;
+  padding: 90px 10%;
+  gap: 8%;
+}
+body:not(.project-site) .contact-page .contact-space {color: #55718a;}
+body:not(.project-site) .contact-details {
+  padding: 34px;
+  background: #fffdfb;
+  border: 1px solid rgba(85,113,138,.15);
+  border-radius: 12px;
+  box-shadow: 0 20px 42px rgba(85,113,138,.06);
+}
+body:not(.project-site) .detail small {color: #55718a;}
+body:not(.project-site) .detail a {font-family: 'Roboto', Arial, sans-serif; font-size: 1.12rem;}
+body:not(.project-site) .article-detail {background: #f9f5f0;}
+body:not(.project-site) .article-detail .detail-content p {color: #222;}
+/* Editoriale Articoli: introduzione accogliente e ritmo tra le schede. */
+body:not(.project-site) .article-page-intro {
+  position: relative;
+  overflow: hidden;
+  border: 0;
+  padding: 85px 10% 58px;
+}
+body:not(.project-site) .article-page-intro::after {
+  content: '';
+  position: absolute;
+  right: -85px;
+  top: -135px;
+  width: 320px;
+  height: 320px;
+  background: #dce8f1;
+  border-radius: 48% 52% 65% 35% / 55% 40% 60% 45%;
+  opacity: .56;
+  transform: rotate(-15deg);
+  pointer-events: none;
+}
+body:not(.project-site) .article-page-intro > * {position: relative; z-index: 1;}
+body:not(.project-site) .article-page-intro h1 {white-space: normal; max-width: 780px;}
+body:not(.project-site) .article-page-intro p {max-width: 700px; font-size: 1.04rem; line-height: 1.8;}
+body:not(.project-site) .article-page-intro .eyebrow {margin-bottom: 19px;}
+body:not(.project-site) .article-page-intro .articles-lead {
+  max-width: 760px;
+  font-size: 1.18rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+body:not(.project-site) .article-list {
+  background: #f9f5f0;
+  padding: 28px 10% 100px;
+  gap: 23px;
+}
+body:not(.project-site) .article-list .full-article {
+  display: grid;
+  grid-template-columns: 155px minmax(0,1fr);
+  gap: 28px;
+  align-items: start;
+  padding: 36px 42px;
+  background: #fffdfb;
+  border: 1px solid rgba(85,113,138,.13);
+  border-left: 4px solid #b8cdda;
+  border-radius: 7px 32px 7px 25px;
+  box-shadow: 0 9px 23px rgba(85,113,138,.04);
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+}
+body:not(.project-site) .article-list .full-article:nth-of-type(2) {
+  background: #fdfbf8;
+  border-left-color: #b8cdda;
+}
+body:not(.project-site) .article-list .full-article:nth-of-type(3) {
+  background: #fdfbf8;
+  border-left-color: #b8cdda;
+}
+body:not(.project-site) .article-list .full-article:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 32px rgba(85,113,138,.1);
+}
+body:not(.project-site) .article-list .full-article .meta {
+  display: block;
+  margin: 8px 0 0;
+  font-size: .78rem;
+  line-height: 1.65;
+}
+body:not(.project-site) .article-list .full-article .eyebrow {margin-bottom: 11px;}
+body:not(.project-site) .article-list .full-article h2 {
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  margin: 7px 0 15px;
+}
+body:not(.project-site) .article-list .full-article p {max-width: 720px; color: #222; line-height: 1.75;}
+body:not(.project-site) .article-list .full-article .text-link {margin-top: 16px; color: #55718a;}
+@media (max-width: 760px) {
+  body:not(.project-site) .home-hero {min-height: auto; padding: 64px 6%;}
+  body:not(.project-site) .hero-art {height: 320px;}
+  body:not(.project-site) .page-intro,
+  body:not(.project-site) .article-page-intro {padding: 60px 7% 45px;}
+  body:not(.project-site) .inner-section,
+  body:not(.project-site) .contact-page {padding: 65px 7%;}
+  body:not(.project-site) .numbered-section {padding: 72px 7%;}
+  body:not(.project-site) .article-list {padding: 23px 6% 70px; gap: 18px;}
+  body:not(.project-site) .article-list .full-article {
+    display: block;
+    padding: 28px 25px;
+    border-radius: 7px 23px 7px 19px;
+  }
+  body:not(.project-site) .article-list .full-article .meta {margin-bottom: 12px;}
+  body:not(.project-site) .article-list .full-article h2 {font-size: 1.6rem;}
+  body:not(.project-site) .article-page-intro::after {width: 190px; height: 190px; right: -95px; top: -75px;}
+  body:not(.project-site) .contact-details {padding: 26px 20px;}
+}
+@media (prefers-reduced-motion: reduce) {
+  body:not(.project-site) .article-list .full-article {transition: none;}
+  body:not(.project-site) .article-list .full-article:hover {transform: none;}
+}
