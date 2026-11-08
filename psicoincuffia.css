@@ -373,5 +373,28 @@ body.project-site .project-hero .project-visual::before {
     width: 270px;
     height: 250px;
   }
+/* MENU IDENTICO AL RESTO DEL SITO */
+body.project-site .site-header {
+  background: #fff;
+  color: #234936;
+  border-bottom: 1px solid rgba(35,73,54,.18);
 }
 
+body.project-site .site-header .nav-cta {
+  background: #fff;
+  color: #234936;
+  border: 1px solid #234936;
+}
+
+body.project-site .site-header .nav-cta:hover {
+  background: #234936;
+  color: #fff;
+}
+
+body.project-site .site-header .main-nav a[href="progetto.html"] {
+  background: linear-gradient(90deg,#ef4444 0%,#f59e0b 20%,#eab308 38%,#22c55e 55%,#06b6d4 72%,#3b82f6 86%,#a855f7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
