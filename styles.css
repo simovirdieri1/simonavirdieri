@@ -429,6 +429,15 @@ body:not(.project-site) .home-hero .eyebrow,
 body:not(.project-site) .home-hero .hero-name {color: #55718a;}
 body:not(.project-site) .home-hero .hero-intro {color: #222; max-width: 480px;}
 body:not(.project-site) .home-hero h1 {max-width: 650px;}
+/* Desktop: fotografia più interna, senza essere tagliata a destra. */
+@media (min-width: 761px) {
+  body:not(.project-site) .home-hero .hero-art {transform: translateX(-1.5vw);}
+}
+/* Due righe distinte nella presentazione di Psicoincuffia in home. */
+body:not(.project-site) .project-preview .Psicoincuffia-title-line {
+  display: block;
+  white-space: normal;
+}
 body:not(.project-site) .hero-art {height: 460px;}
 body:not(.project-site) .hero-photo {
   border-color: #fffdfb;
