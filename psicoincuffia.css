@@ -382,25 +382,4 @@ body.project-site .project-hero .project-visual::before {
     height: 250px;
   }
 }
-/* Mantiene la scritta Psicoincuffia arcobaleno anche nella pagina progetto */
-.project-site .main-nav a[href="progetto.html"],
-.project-site .main-nav a.active[href="progetto.html"] {
-  background: linear-gradient(90deg, #ff7a00 0%, #ff4fa3 35%, #7a4dff 65%, #26b7ff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-  font-weight: 700;
-}
 
-/* Mantiene la lineetta sotto la voce attiva */
-.project-site .main-nav a.active[href="progetto.html"] {
-  border-bottom: 2px solid #315a45;
-  padding-bottom: 6px;
-}
-/* Evita che la pagina progetto cambi l'aspetto globale del bottone header */
-.project-site .site-header .nav-cta {
-  background: transparent;
-  color: inherit;
-  border: 1px solid currentColor;
-}
