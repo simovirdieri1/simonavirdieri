@@ -17,7 +17,7 @@ body.project-site h2 {color: var(--pic-prugna);}
 body.project-site .eyebrow,
 body.project-site .project-kicker {color: #82566d;}
 body.project-site .site-header {background: #fff;}
-body.project-site .main-nav a[href="progetto.html"] 
+
 /* 00 — Hero: il logo originale è il protagonista */
 body.project-site .project-hero-original {
   background: var(--pic-crema);
