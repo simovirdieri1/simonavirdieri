@@ -305,3 +305,21 @@
 
 
 
+
+
+/* Home — logo Psicoincuffia SVG trasparente: nessun filtro o fondale. */
+.home-project-mark {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+.home-project-mark .project-logo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0;
+  background: transparent;
+  mix-blend-mode: normal;
+  filter: none;
+}
