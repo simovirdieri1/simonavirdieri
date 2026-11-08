@@ -85,17 +85,18 @@ body.project-site .project-visual::before {
   border-radius: 45% 55% 57% 43% / 53% 42% 58% 47%;
   transform: rotate(-13deg);
 }
-body.project-site .project-visual .project-page-mark {
+body.project-site .project-page-mark {
   position: relative;
-  inset: auto;
-  width: min(90%, 240px);
-  height: min(90%, 240px);
-  margin: 0;
-  z-index: 2;
-  transform: none;
+  width: 360px;
+  height: 360px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: none;
+  border: none;
+  box-shadow: none;
+  isolation: isolate;
+  animation: blobFloat 5.5s ease-in-out infinite;
 }
 body.project-site .project-visual .project-logo {
   width: 100%;
