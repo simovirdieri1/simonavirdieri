@@ -149,38 +149,37 @@ body.project-site .project-scroll-label {
   bottom: 24px;
 }
 
-/* 01 — Il progetto: niente fascia colorata a tutta larghezza */
+/* 01 — Il progetto: composizione editoriale libera, senza riquadro */
 body.project-site .project-manifesto {
   max-width: 1220px;
-  margin: 20px auto 110px;
-  padding: 60px 5% 60px;
+  margin: 30px auto 115px;
+  padding: 72px 5% 58px;
   display: grid;
-  grid-template-columns: 150px 1fr;
-  gap: 35px;
+  grid-template-columns: 145px minmax(0, 1fr);
+  gap: 55px;
+  align-items: start;
   background: transparent;
   border: none;
   position: relative;
 }
-body.project-site .project-manifesto::before {
-  content: "";
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 20%;
-  right: 3%;
-  bottom: 0;
-  background: var(--pic-rosa-chiaro);
-  border-radius: 44px 12px 52px 20px;
-  transform: rotate(-1.5deg);
-}
+body.project-site .project-manifesto::before {display: none;}
 body.project-site .manifesto-index,
 body.project-site .manifesto-content {position: relative; z-index: 1;}
-body.project-site .manifesto-index {color: #82566d; padding-top: 24px;}
-body.project-site .manifesto-content {padding: 10px 8% 5px 0; max-width: 780px;}
-body.project-site .manifesto-content h2 {font-size: clamp(2.2rem, 4vw, 3.9rem);}
+body.project-site .manifesto-index {color: #82566d; padding-top: 42px;}
+body.project-site .manifesto-content {
+  padding: 0 5% 0 0;
+  margin-left: clamp(20px, 5vw, 72px);
+  max-width: 790px;
+}
+body.project-site .manifesto-content .eyebrow {margin-left: 22px;}
+body.project-site .manifesto-content h2 {
+  font-size: clamp(2.2rem, 4vw, 3.9rem);
+  margin: 26px 0 34px -20px;
+}
 body.project-site .manifesto-content > p:not(.eyebrow) {
   color: var(--pic-testo);
-  max-width: 630px;
+  max-width: 585px;
+  margin-left: 50px;
   line-height: 1.8;
 }
 
@@ -336,12 +335,14 @@ body.project-site footer {border-top: 1px solid rgba(67,38,62,.1); background: #
   body.project-site .project-scroll-label {left: 6%; bottom: 25px;}
   body.project-site .project-manifesto {
     display: block;
-    margin: 25px 4% 70px;
-    padding: 45px 6%;
+    margin: 20px 4% 75px;
+    padding: 48px 6%;
   }
-  body.project-site .project-manifesto::before {left: 0; right: 0;}
-  body.project-site .manifesto-index {padding: 0 0 22px;}
-  body.project-site .manifesto-content {padding: 0;}
+  body.project-site .manifesto-index {padding: 0 0 26px;}
+  body.project-site .manifesto-content {padding: 0; margin-left: 0;}
+  body.project-site .manifesto-content .eyebrow {margin-left: 14px;}
+  body.project-site .manifesto-content h2 {margin: 20px 0 26px;}
+  body.project-site .manifesto-content > p:not(.eyebrow) {margin-left: 18px;}
   body.project-site .project-story {padding: 30px 6% 80px;}
   body.project-site .story-intro {margin-bottom: 30px;}
   body.project-site .playlist-section {margin: 0 3% 60px; padding: 40px 7%;}
