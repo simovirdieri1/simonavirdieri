@@ -281,15 +281,7 @@ body.project-site .playlist-section {
   position: relative;
   overflow: visible;
 }
-body.project-site .playlist-section::before {
-  content: "";
-  position: absolute;
-  inset: 10px 4%;
-  z-index: 0;
-  border-radius: 28px 65px 25px 60px;
-  background: #eff2d8;
-  transform: rotate(1deg);
-}
+body.project-site .playlist-section::before {display: none;}
 body.project-site .playlist-section > * {position: relative; z-index: 1;}
 body.project-site .playlist-copy {padding: 15px 0;}
 body.project-site .playlist-copy::before {display: none;}
@@ -316,14 +308,63 @@ body.project-site .playlist-headphones {
 body.project-site .playlist-card {
   justify-self: start;
   align-self: end;
-  width: min(75%, 350px);
-  min-height: 205px;
-  margin: 145px 0 10px;
-  background: #452b48;
-  border-radius: 26px;
-  box-shadow: 0 15px 28px rgba(67,38,62,.15);
+  display: block;
+  position: relative;
+  width: min(83%, 365px);
+  min-height: 222px;
+  margin: 135px 0 10px;
+  padding: 24px;
+  background: #f4c9d8;
+  border: 2px solid #d5a5b4;
+  border-radius: 24px 40px 28px 37px;
+  box-shadow: 0 14px 30px rgba(89,64,44,.12);
+  color: #171717;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  transition: transform .3s ease, box-shadow .3s ease, background .3s ease;
 }
-body.project-site .playlist-button {z-index: 5;}
+body.project-site .playlist-card::before,
+body.project-site .playlist-card::after {border-color: rgba(116,81,59,.14);}
+body.project-site .playlist-card:hover,
+body.project-site .playlist-card:focus-visible {
+  background: #f8d9e3;
+  transform: translateY(-5px) rotate(0deg);
+  box-shadow: 0 20px 36px rgba(89,64,44,.18);
+}
+body.project-site .playlist-card:focus-visible {outline: 3px solid #8a6048; outline-offset: 5px;}
+body.project-site .playlist-lines {
+  position: absolute;
+  inset: 14% 16% 26%;
+  height: 47%;
+}
+body.project-site .playlist-lines i {
+  background: #fffdf6;
+  box-shadow: 0 0 10px rgba(255,255,255,.55);
+}
+body.project-site .playlist-card-label {
+  position: absolute;
+  left: 24px;
+  bottom: 23px;
+  font-size: .83rem;
+  font-weight: 700;
+  letter-spacing: .015em;
+  color: #171717;
+}
+body.project-site .playlist-card-arrow {
+  position: absolute;
+  right: 23px;
+  bottom: 16px;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #dce987;
+  color: #171717;
+  font-size: 1.3rem;
+  transition: transform .3s ease;
+}
+body.project-site .playlist-card:hover .playlist-card-arrow {transform: translateX(3px);}
 
 /* 04 — Social: due schede di chiusura */
 body.project-site .social-section {
@@ -400,10 +441,10 @@ body.project-site footer {border-top: 1px solid rgba(67,38,62,.1); background: #
   }
   body.project-site .story-intro {margin-bottom: 28px;}
   body.project-site .playlist-section {margin: 0 3% 60px; padding: 40px 7%;}
-  body.project-site .playlist-section::before {inset: 0;}
+  body.project-site .playlist-section::before {display: none;}
   body.project-site .playlist-composition {min-height: 320px;}
   body.project-site .playlist-headphones {width: 260px; top: -12px;}
-  body.project-site .playlist-card {min-height: 165px; width: 76%; margin-top: 115px;}
+  body.project-site .playlist-card {min-height: 195px; width: min(87%, 350px); margin-top: 130px;}
   body.project-site .social-section {display: block; margin: 0 4% 55px; padding: 15px 4%;}
   body.project-site .social-links {margin-top: 32px;}
 }
@@ -491,4 +532,55 @@ body.project-site .site-header .main-nav a[href="progetto.html"] {
 @media (prefers-reduced-motion: reduce) {
   body.project-site .project-manifesto::before,
   body.project-site .project-story::after {animation: none;}
+}
+
+/* Palette tipografica Psicoincuffia: testi neri, titoli marrone caldo. */
+body.project-site {
+  --pic-testo: #171717;
+  --pic-prugna: #815e45;
+  color: #171717;
+}
+body.project-site h1,
+body.project-site h2,
+body.project-site h3,
+body.project-site .project-hero-original h1,
+body.project-site .project-hero-original h1 em,
+body.project-site .manifesto-content h2,
+body.project-site .story-intro h2,
+body.project-site .playlist-section h2,
+body.project-site .social-heading h2,
+body.project-site .story-step strong {
+  color: #815e45;
+}
+body.project-site .project-hero-original h1 em {-webkit-text-fill-color: #815e45;}
+body.project-site .eyebrow,
+body.project-site .project-kicker,
+body.project-site .project-scroll-label,
+body.project-site .manifesto-index,
+body.project-site .story-step-label,
+body.project-site .story-step-number,
+body.project-site .story-arrow,
+body.project-site .social-label,
+body.project-site .social-card,
+body.project-site .social-card strong,
+body.project-site .project-hero-description,
+body.project-site .manifesto-content > p:not(.eyebrow),
+body.project-site .story-intro > p:not(.eyebrow),
+body.project-site .story-step > p:last-child,
+body.project-site .playlist-section p:not(.eyebrow),
+body.project-site .social-heading > p:not(.eyebrow),
+body.project-site footer,
+body.project-site .site-header,
+body.project-site .site-header .main-nav a:not([href="progetto.html"]),
+body.project-site .site-header .nav-cta {
+  color: #171717;
+}
+body.project-site .site-header .nav-cta {border-color: #171717;}
+body.project-site .site-header .nav-cta:hover {background: #171717; color: #fff;}
+body.project-site .story-step-number {color: #815e45;}
+body.project-site .social-card:nth-child(2) {background: #f8fbe7;}
+@media (prefers-reduced-motion: reduce) {
+  body.project-site .playlist-card,
+  body.project-site .playlist-card-arrow {transition: none;}
+  body.project-site .playlist-card:hover {transform: none;}
 }
