@@ -206,8 +206,11 @@ body.project-site .manifesto-content > p:not(.eyebrow) {
 
 /* 02 — Tre schede sfalsate per "Come nasce un post" */
 body.project-site .project-story {
-  padding: 34px 9% 83px;
-  background: transparent;
+  width: min(90%, 1190px);
+  margin: 18px auto 84px;
+  padding: 64px 6% 76px;
+  background: var(--pic-lime);
+  border-radius: 36px 70px 44px 64px;
   color: var(--pic-prugna);
   position: relative;
   isolation: isolate;
@@ -222,8 +225,8 @@ body.project-site .project-story::after {
   height: clamp(85px, 12vw, 180px);
   right: 3%;
   top: 16px;
-  background: var(--pic-rosa);
-  opacity: .52;
+  background: #f8fbe5;
+  opacity: .55;
   border-radius: 41% 59% 63% 37% / 56% 43% 57% 44%;
   transform: rotate(17deg);
   pointer-events: none;
@@ -245,13 +248,13 @@ body.project-site .story-step {
   padding: 28px;
   border: 1px solid rgba(67,38,62,.08);
   border-radius: 17px 38px 18px 32px;
-  background: var(--pic-rosa-chiaro);
-  box-shadow: 0 12px 28px rgba(67,38,62,.06);
+  background: #f8fbe7;
+  box-shadow: 0 12px 28px rgba(67,38,62,.065);
   color: var(--pic-prugna);
   transform: rotate(-1.5deg);
 }
-body.project-site .story-step-two {background: #eff4c2; transform: translateY(30px) rotate(1.5deg);}
-body.project-site .story-step-three {background: #f6e4ed; transform: rotate(-.8deg);}
+body.project-site .story-step-two {background: #f8fbe7; transform: translateY(30px) rotate(1.5deg);}
+body.project-site .story-step-three {background: #f8fbe7; transform: rotate(-.8deg);}
 body.project-site .story-step-number {font: 500 2.5rem/1 var(--serif); color: #80546d;}
 body.project-site .story-step-label {
   margin: 20px 0 8px;
@@ -349,7 +352,7 @@ body.project-site footer {border-top: 1px solid rgba(67,38,62,.1); background: #
 
 @media (max-width: 900px) {
   body.project-site .project-hero-original {padding-left: 6%; padding-right: 6%;}
-  body.project-site .project-story {padding-left: 6%; padding-right: 6%;}
+  body.project-site .project-story {width: 92%; padding-left: 6%; padding-right: 6%;}
   body.project-site .storyline {grid-template-columns: 1fr; gap: 15px;}
   body.project-site .story-arrow {transform: rotate(90deg);}
   body.project-site .story-step,
@@ -389,7 +392,12 @@ body.project-site footer {border-top: 1px solid rgba(67,38,62,.1); background: #
     padding: 24px 22px;
     border-radius: 16px 31px 17px 28px;
   }
-  body.project-site .project-story {padding: 25px 6% 62px;}
+  body.project-site .project-story {
+    width: 92%;
+    margin: 10px auto 58px;
+    padding: 38px 7% 50px;
+    border-radius: 26px 43px 29px 40px;
+  }
   body.project-site .story-intro {margin-bottom: 28px;}
   body.project-site .playlist-section {margin: 0 3% 60px; padding: 40px 7%;}
   body.project-site .playlist-section::before {inset: 0;}
