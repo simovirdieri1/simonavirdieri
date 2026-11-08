@@ -398,3 +398,9 @@ body.project-site .project-hero .project-visual::before {
   border-bottom: 2px solid #315a45;
   padding-bottom: 6px;
 }
+/* Evita che la pagina progetto cambi l'aspetto globale del bottone header */
+.project-site .site-header .nav-cta {
+  background: transparent;
+  color: inherit;
+  border: 1px solid currentColor;
+}
