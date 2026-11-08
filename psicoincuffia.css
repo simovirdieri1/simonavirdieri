@@ -2,9 +2,9 @@
    Questo foglio viene caricato DOPO styles.css, soltanto in progetto.html. */
 
 body.project-site {
-  --pic-rosa: #f4c9d8;
-  --pic-rosa-chiaro: #fbe8ed;
-  --pic-lime: #dce987;
+  --pic-rosa: #f1d9e1;
+  --pic-rosa-chiaro: #f8eef1;
+  --pic-lime: #e4eac6;
   --pic-crema: #fffaf6;
   --pic-prugna: #43263e;
   --pic-testo: #574b54;
@@ -225,7 +225,7 @@ body.project-site .project-story::after {
   height: clamp(85px, 12vw, 180px);
   right: 3%;
   top: 16px;
-  background: #f8fbe5;
+  background: #f7f8ed;
   opacity: .55;
   border-radius: 41% 59% 63% 37% / 56% 43% 57% 44%;
   transform: rotate(17deg);
@@ -248,13 +248,13 @@ body.project-site .story-step {
   padding: 28px;
   border: 1px solid rgba(67,38,62,.08);
   border-radius: 17px 38px 18px 32px;
-  background: #f8fbe7;
+  background: #f7f8ee;
   box-shadow: 0 12px 28px rgba(67,38,62,.065);
   color: var(--pic-prugna);
   transform: rotate(-1.5deg);
 }
-body.project-site .story-step-two {background: #f8fbe7; transform: translateY(30px) rotate(1.5deg);}
-body.project-site .story-step-three {background: #f8fbe7; transform: rotate(-.8deg);}
+body.project-site .story-step-two {background: #f7f8ee; transform: translateY(30px) rotate(1.5deg);}
+body.project-site .story-step-three {background: #f7f8ee; transform: rotate(-.8deg);}
 body.project-site .story-step-number {font: 500 2.5rem/1 var(--serif); color: #80546d;}
 body.project-site .story-step-label {
   margin: 20px 0 8px;
@@ -314,8 +314,8 @@ body.project-site .playlist-card {
   min-height: 222px;
   margin: 135px 0 10px;
   padding: 24px;
-  background: #f4c9d8;
-  border: 2px solid #d5a5b4;
+  background: #f1d9e1;
+  border: 2px solid #dec2cc;
   border-radius: 24px 40px 28px 37px;
   box-shadow: 0 14px 30px rgba(89,64,44,.12);
   color: #171717;
@@ -327,7 +327,7 @@ body.project-site .playlist-card::before,
 body.project-site .playlist-card::after {border-color: rgba(116,81,59,.14);}
 body.project-site .playlist-card:hover,
 body.project-site .playlist-card:focus-visible {
-  background: #f8d9e3;
+  background: #f7e7ec;
   transform: translateY(-5px) rotate(0deg);
   box-shadow: 0 20px 36px rgba(89,64,44,.18);
 }
@@ -359,7 +359,7 @@ body.project-site .playlist-card-arrow {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: #dce987;
+  background: #e4eac6;
   color: #171717;
   font-size: 1.3rem;
   transition: transform .3s ease;
@@ -377,7 +377,7 @@ body.project-site .social-section {
   grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
   align-items: center;
   gap: 8%;
-  background: #fbe8ed;
+  background: #f8eef1;
   border: 0;
   border-radius: 56px 28px 65px 34px;
   color: #171717;
@@ -419,7 +419,7 @@ body.project-site .social-card:nth-child(2) {
 body.project-site .social-card:hover,
 body.project-site .social-card:nth-child(2):hover,
 body.project-site .social-card:focus-visible {
-  background: #f8fbe7;
+  background: #f7f8ee;
   transform: translateX(5px);
   box-shadow: 0 12px 25px rgba(129,94,69,.11);
 }
