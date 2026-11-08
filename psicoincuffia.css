@@ -2,10 +2,10 @@
    Questo foglio viene caricato DOPO styles.css, soltanto in progetto.html. */
 
 body.project-site {
-  --pic-rosa: #f1d9e1;
+  --pic-rosa: #efc6d5;
   --pic-rosa-chiaro: #f8eef1;
-  --pic-lime: #e4eac6;
-  --pic-crema: #fffaf6;
+  --pic-lime: #dce9a5;
+  --pic-crema: #fffcf9;
   --pic-prugna: #43263e;
   --pic-testo: #574b54;
   background: var(--pic-crema);
@@ -195,7 +195,7 @@ body.project-site .manifesto-content h2 {
 }
 body.project-site .manifesto-content > p:not(.eyebrow) {
   color: var(--pic-testo);
-  background: var(--pic-rosa);
+  background: #f4dbe4;
   border-radius: 18px 39px 22px 43px;
   max-width: 640px;
   margin: 0 0 0 clamp(28px, 5vw, 70px);
@@ -209,7 +209,7 @@ body.project-site .project-story {
   width: min(90%, 1190px);
   margin: 18px auto 84px;
   padding: 64px 6% 76px;
-  background: var(--pic-lime);
+  background: #e9efc8;
   border-radius: 36px 70px 44px 64px;
   color: var(--pic-prugna);
   position: relative;
@@ -314,8 +314,8 @@ body.project-site .playlist-card {
   min-height: 222px;
   margin: 135px 0 10px;
   padding: 24px;
-  background: #f1d9e1;
-  border: 2px solid #dec2cc;
+  background: #f6e5eb;
+  border: 2px solid #e6cdd5;
   border-radius: 24px 40px 28px 37px;
   box-shadow: 0 14px 30px rgba(89,64,44,.12);
   color: #171717;
@@ -327,7 +327,7 @@ body.project-site .playlist-card::before,
 body.project-site .playlist-card::after {border-color: rgba(116,81,59,.14);}
 body.project-site .playlist-card:hover,
 body.project-site .playlist-card:focus-visible {
-  background: #f7e7ec;
+  background: #faedf1;
   transform: translateY(-5px) rotate(0deg);
   box-shadow: 0 20px 36px rgba(89,64,44,.18);
 }
@@ -377,7 +377,7 @@ body.project-site .social-section {
   grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
   align-items: center;
   gap: 8%;
-  background: #f8eef1;
+  background: #f9edf1;
   border: 0;
   border-radius: 56px 28px 65px 34px;
   color: #171717;
