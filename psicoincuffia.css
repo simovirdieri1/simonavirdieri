@@ -364,7 +364,9 @@ body.project-site .project-hero .project-page-mark .project-logo {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border-radius: 22px;
+  border-radius: 50%;
+  clip-path: circle(50% at 50% 50%);
+  animation: logoBreath 4.2s ease-in-out infinite;
 }
 
 body.project-site .project-hero .project-visual::before {
