@@ -217,7 +217,6 @@
 .project-site .playlist-card{background:var(--mf-mint)}
 .project-site .project-button{background:var(--mf-blue);color:var(--mf-cream)}
 .project-site .project-button:hover,
-.project-site .nav-cta:hover,
 .project-site .social-card:hover{background:var(--mf-coral);color:var(--mf-blue)}
 .project-site .project-logo{filter:url(#remove-white) contrast(1.15) saturate(.7)}
 .project-site .project-hero-original h1 em{background:var(--mf-coral);background-clip:border-box;-webkit-background-clip:border-box;color:var(--mf-blue);-webkit-text-fill-color:var(--mf-blue)}
