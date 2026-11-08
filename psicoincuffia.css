@@ -74,57 +74,74 @@ body.project-site .project-visual {
   place-items: center;
   isolation: isolate;
 }
+/* Bolla lime sullo sfondo: forma organica e movimento indipendente */
 body.project-site .project-visual::before {
   content: "";
-  display: block;
   position: absolute;
-  z-index: -1;
-  width: min(95%, 310px);
-  height: min(95%, 310px);
+  width: 335px;
+  height: 320px;
   background: var(--pic-lime);
-  border-radius: 45% 55% 57% 43% / 53% 42% 58% 47%;
-  transform: rotate(-13deg);
+  border-radius: 58% 42% 46% 54% / 45% 57% 43% 55%;
+  transform: translate(-29px, 22px) rotate(-14deg);
+  z-index: 0;
+  animation: picLimeDrift 9s ease-in-out infinite alternate;
 }
+/* Bolla rosa in primo piano: non è più il quadrato incorporato nel logo */
 body.project-site .project-page-mark {
   position: relative;
-  width: 360px;
-  height: 360px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: none;
-  border: none;
-  box-shadow: none;
+  width: 275px;
+  height: 265px;
+  margin: 0;
+  display: grid;
+  place-items: center;
   isolation: isolate;
-  animation: blobFloat 5.5s ease-in-out infinite;
+  overflow: visible;
+  border: 0;
+  box-shadow: none;
+  background: var(--pic-rosa);
+  border-radius: 46% 54% 61% 39% / 53% 43% 57% 47%;
+  z-index: 1;
+  transform: rotate(7deg);
+  animation: picPinkMorph 8s ease-in-out infinite alternate;
 }
-body.project-site .project-page-mark::before {
-  content: "";
-  position: absolute;
-  width: 320px;
-  height: 300px;
-  background: #dce987;
-  border-radius: 58% 42% 47% 53% / 42% 56% 44% 58%;
-  transform: rotate(-10deg) translate(-8px, 10px);
-  z-index: -2;
-}
-
+/* Due piccole bolle decorative, parte della composizione */
+body.project-site .project-page-mark::before,
 body.project-site .project-page-mark::after {
   content: "";
   position: absolute;
-  width: 255px;
-  height: 235px;
-  background: #f4c9d8;
-  border-radius: 43% 57% 60% 40% / 41% 39% 61% 59%;
-  transform: rotate(12deg) translate(18px, -6px);
+  border-radius: 55% 45% 63% 37% / 42% 56% 44% 58%;
+  pointer-events: none;
+}
+body.project-site .project-page-mark::before {
+  width: 56px;
+  height: 53px;
+  background: var(--pic-rosa);
+  top: -18px;
+  right: -30px;
   z-index: -1;
+  animation: picBubbleFloat 5.8s ease-in-out infinite alternate;
+}
+body.project-site .project-page-mark::after {
+  width: 38px;
+  height: 40px;
+  background: var(--pic-lime);
+  bottom: 3px;
+  left: -49px;
+  z-index: -1;
+  animation: picBubbleFloat 7s ease-in-out -2s infinite alternate-reverse;
 }
 body.project-site .project-visual .project-logo {
-  width: 100%;
-  height: 100%;
+  display: block;
+  width: 94%;
+  height: 94%;
   object-fit: contain;
-  filter: url(#remove-white);
   mix-blend-mode: normal;
+  filter: none;
+  clip-path: none;
+  border-radius: 0;
+  position: relative;
+  z-index: 2;
+  animation: picLogoBreathe 6s ease-in-out infinite;
 }
 body.project-site .project-scroll-label {
   color: var(--pic-testo);
@@ -338,83 +355,66 @@ body.project-site footer {border-top: 1px solid rgba(67,38,62,.1); background: #
 @media (prefers-reduced-motion: reduce) {
   body.project-site .playlist-lines i {animation: none;}
 }
-/* LOGO HERO - DIMENSIONI E COMPOSIZIONE */
-
+/* Composizione del logo: prevale sulle regole legacy di styles.css. */
 body.project-site .project-hero .project-visual {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   min-height: 390px;
-  height: auto;
+  height: 460px;
 }
-
 body.project-site .project-hero .project-visual .project-page-mark {
-  position: relative;
-  inset: auto;
-  width: 260px;
-  height: 260px;
+  width: 275px;
+  height: 265px;
   margin: 0;
-  transform: none;
-  z-index: 2;
+  inset: auto;
+  z-index: 1;
+  transform: rotate(7deg);
 }
-
 body.project-site .project-hero .project-page-mark .project-logo {
-  display: block;
-  width: 100%;
-  height: 100%;
+  width: 94%;
+  height: 94%;
   object-fit: contain;
-  border-radius: 50%;
-  clip-path: circle(50% at 50% 50%);
-  animation: logoBreath 4.2s ease-in-out infinite;
+  border-radius: 0;
+  clip-path: none;
+  filter: none;
+  mix-blend-mode: normal;
 }
-
-body.project-site .project-hero .project-visual::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 325px;
-  height: 310px;
-  background: #ddeb7e;
-  border-radius: 58% 42% 45% 55%;
-  transform: translate(-50%, -50%) rotate(-12deg);
-  z-index: 0;
+@keyframes picLimeDrift {
+  0% {transform: translate(-29px,22px) rotate(-14deg) scale(1); border-radius: 58% 42% 46% 54% / 45% 57% 43% 55%;}
+  100% {transform: translate(-17px,9px) rotate(-5deg) scale(1.035); border-radius: 48% 52% 57% 43% / 57% 43% 52% 48%;}
 }
-
+@keyframes picPinkMorph {
+  0% {transform: translateY(0) rotate(7deg); border-radius: 46% 54% 61% 39% / 53% 43% 57% 47%;}
+  100% {transform: translateY(-9px) rotate(-3deg); border-radius: 57% 43% 47% 53% / 43% 57% 48% 52%;}
+}
+@keyframes picLogoBreathe {
+  0%,100% {transform: translateY(0) rotate(-3deg) scale(1);}
+  50% {transform: translateY(-4px) rotate(1deg) scale(1.025);}
+}
+@keyframes picBubbleFloat {
+  0% {transform: translate(0,0) rotate(-8deg);}
+  100% {transform: translate(7px,-12px) rotate(12deg);}
+}
 @media (max-width: 760px) {
-  body.project-site .project-hero .project-visual {
-    min-height: 310px;
-  }
-
-  body.project-site .project-hero .project-visual .project-page-mark {
-    width: 210px;
-    height: 210px;
-  }
-
-  body.project-site .project-hero .project-visual::before {
-    width: 270px;
-    height: 250px;
-  }
-/* MENU IDENTICO AL RESTO DEL SITO */
-body.project-site .site-header {
-  background: #fff;
-  color: #234936;
-  border-bottom: 1px solid rgba(35,73,54,.18);
+  body.project-site .project-hero .project-visual {height: 310px; min-height: 310px;}
+  body.project-site .project-hero .project-visual::before {width: 255px; height: 245px;}
+  body.project-site .project-hero .project-visual .project-page-mark {width: 215px; height: 208px; margin: 0;}
+  body.project-site .project-page-mark::before {width: 40px; height: 39px; right: -18px; top: -12px;}
+  body.project-site .project-page-mark::after {width: 28px; height: 30px; left: -30px;}
 }
-
-body.project-site .site-header .nav-cta {
-  background: #fff;
-  color: #234936;
-  border: 1px solid #234936;
+/* Accessibilità: nessun movimento quando richiesto dal dispositivo. */
+@media (prefers-reduced-motion: reduce) {
+  body.project-site .project-visual::before,
+  body.project-site .project-page-mark,
+  body.project-site .project-page-mark::before,
+  body.project-site .project-page-mark::after,
+  body.project-site .project-page-mark .project-logo {animation: none !important;}
 }
-
-body.project-site .site-header .nav-cta:hover {
-  background: #234936;
-  color: #fff;
-}
-
+/* Menu coerente con le altre pagine. */
+body.project-site .site-header {background: #fff; color: #234936; border-bottom: 1px solid rgba(35,73,54,.18);}
+body.project-site .site-header .nav-cta {background: #fff; color: #234936; border: 1px solid #234936;}
+body.project-site .site-header .nav-cta:hover {background: #234936; color: #fff;}
 body.project-site .site-header .main-nav a[href="progetto.html"] {
   background: linear-gradient(90deg,#ef4444 0%,#f59e0b 20%,#eab308 38%,#22c55e 55%,#06b6d4 72%,#3b82f6 86%,#a855f7 100%);
   -webkit-background-clip: text;
