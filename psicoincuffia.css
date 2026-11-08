@@ -366,30 +366,85 @@ body.project-site .playlist-card-arrow {
 }
 body.project-site .playlist-card:hover .playlist-card-arrow {transform: translateX(3px);}
 
-/* 04 — Social: due schede di chiusura */
+/* 04 — Social: una zona rosa tenue distinta dal blocco playlist */
 body.project-site .social-section {
-  margin: 0 auto 55px;
-  max-width: 1220px;
-  padding: 45px 7%;
+  position: relative;
+  isolation: isolate;
+  width: min(90%, 1180px);
+  margin: 18px auto 75px;
+  padding: 70px 7%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
+  align-items: center;
   gap: 8%;
-  background: transparent;
+  background: #fbe8ed;
   border: 0;
-  color: var(--pic-prugna);
+  border-radius: 56px 28px 65px 34px;
+  color: #171717;
 }
-body.project-site .social-heading > p:not(.eyebrow) {color: var(--pic-testo); font-size: 1.05rem; line-height: 1.7;}
-body.project-site .social-heading h2 {font-size: clamp(2.1rem, 3.5vw, 3.8rem);}
-body.project-site .social-card {
-  border: 1px solid rgba(67,38,62,.11);
-  border-radius: 18px 30px 18px 30px;
-  background: var(--pic-rosa-chiaro);
-  color: var(--pic-prugna);
+body.project-site .social-section::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 96px;
+  height: 91px;
+  top: -24px;
+  right: 8%;
+  border-radius: 56% 44% 49% 51% / 48% 61% 39% 52%;
+  background: var(--pic-lime);
+  transform: rotate(-15deg);
+  pointer-events: none;
 }
-body.project-site .social-card:nth-child(2) {background: #eaf1ba;}
-body.project-site .social-card:hover {background: #fff;}
-body.project-site .social-label {color: #82566d;}
-body.project-site footer {border-top: 1px solid rgba(67,38,62,.1); background: #fff;}
+body.project-site .social-heading > p:not(.eyebrow) {
+  color: var(--pic-testo);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+body.project-site .social-heading h2 {
+  font-size: clamp(2.1rem, 3.5vw, 3.8rem);
+  max-width: 480px;
+}
+body.project-site .social-links {display: grid; gap: 18px;}
+body.project-site .social-card,
+body.project-site .social-card:nth-child(2) {
+  position: relative;
+  background: #fffaf6;
+  border: 1px solid rgba(129,94,69,.14);
+  border-radius: 18px 32px 20px 28px;
+  color: #171717;
+  padding: 26px 72px 26px 28px;
+  box-shadow: 0 9px 20px rgba(129,94,69,.06);
+  transition: background-color .25s ease, transform .25s ease, box-shadow .25s ease;
+}
+body.project-site .social-card:hover,
+body.project-site .social-card:nth-child(2):hover,
+body.project-site .social-card:focus-visible {
+  background: #f8fbe7;
+  transform: translateX(5px);
+  box-shadow: 0 12px 25px rgba(129,94,69,.11);
+}
+body.project-site .social-card:focus-visible {
+  outline: 3px solid #815e45;
+  outline-offset: 4px;
+}
+body.project-site .social-label {color: #171717;}
+body.project-site .social-card strong {
+  color: #171717;
+  font-size: clamp(1.2rem, 2vw, 1.55rem);
+  overflow-wrap: anywhere;
+}
+body.project-site .social-arrow {
+  right: 23px;
+  display: grid;
+  place-items: center;
+  width: 43px;
+  height: 43px;
+  background: var(--pic-lime);
+  color: #171717;
+  border-radius: 50%;
+  font-size: 1.25rem;
+}
+body.project-site footer {border-top: 1px solid rgba(129,94,69,.12); background: #fff;}
 
 @media (max-width: 900px) {
   body.project-site .project-hero-original {padding-left: 6%; padding-right: 6%;}
@@ -445,7 +500,23 @@ body.project-site footer {border-top: 1px solid rgba(67,38,62,.1); background: #
   body.project-site .playlist-composition {min-height: 320px;}
   body.project-site .playlist-headphones {width: 260px; top: -12px;}
   body.project-site .playlist-card {min-height: 195px; width: min(87%, 350px); margin-top: 130px;}
-  body.project-site .social-section {display: block; margin: 0 4% 55px; padding: 15px 4%;}
+  body.project-site .social-section {
+    display: block;
+    width: 92%;
+    margin: 15px auto 62px;
+    padding: 44px 7% 48px;
+    border-radius: 35px 22px 40px 25px;
+  }
+  body.project-site .social-section::before {
+    width: 62px;
+    height: 60px;
+    right: 10%;
+    top: -18px;
+  }
+  body.project-site .social-card,
+  body.project-site .social-card:nth-child(2) {
+    padding: 23px 65px 23px 21px;
+  }
   body.project-site .social-links {margin-top: 32px;}
 }
 @media (prefers-reduced-motion: reduce) {
@@ -578,7 +649,7 @@ body.project-site .site-header .nav-cta {
 body.project-site .site-header .nav-cta {border-color: #171717;}
 body.project-site .site-header .nav-cta:hover {background: #171717; color: #fff;}
 body.project-site .story-step-number {color: #815e45;}
-body.project-site .social-card:nth-child(2) {background: #f8fbe7;}
+/* Le due schede social condividono lo stesso colore. */
 @media (prefers-reduced-motion: reduce) {
   body.project-site .playlist-card,
   body.project-site .playlist-card-arrow {transition: none;}
