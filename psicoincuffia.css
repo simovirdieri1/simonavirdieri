@@ -173,13 +173,18 @@ body.project-site .manifesto-content {
 }
 body.project-site .manifesto-content .eyebrow {margin-left: 22px;}
 body.project-site .manifesto-content h2 {
-  font-size: clamp(2.2rem, 4vw, 3.9rem);
-  margin: 26px 0 34px -20px;
+  font-size: clamp(2rem, 3.2vw, 3.25rem);
+  line-height: 1.17;
+  margin: 26px 0 36px -20px;
+  max-width: 760px;
 }
 body.project-site .manifesto-content > p:not(.eyebrow) {
   color: var(--pic-testo);
-  max-width: 585px;
-  margin-left: 50px;
+  background: var(--pic-rosa);
+  border-radius: 18px 39px 22px 43px;
+  max-width: 640px;
+  margin: 0 0 0 clamp(28px, 5vw, 70px);
+  padding: 30px 36px;
   line-height: 1.8;
 }
 
@@ -341,8 +346,15 @@ body.project-site footer {border-top: 1px solid rgba(67,38,62,.1); background: #
   body.project-site .manifesto-index {padding: 0 0 26px;}
   body.project-site .manifesto-content {padding: 0; margin-left: 0;}
   body.project-site .manifesto-content .eyebrow {margin-left: 14px;}
-  body.project-site .manifesto-content h2 {margin: 20px 0 26px;}
-  body.project-site .manifesto-content > p:not(.eyebrow) {margin-left: 18px;}
+  body.project-site .manifesto-content h2 {
+    font-size: clamp(1.65rem, 7vw, 2.3rem);
+    margin: 20px 0 28px;
+  }
+  body.project-site .manifesto-content > p:not(.eyebrow) {
+    margin: 0 0 0 12px;
+    padding: 24px 22px;
+    border-radius: 16px 31px 17px 28px;
+  }
   body.project-site .project-story {padding: 30px 6% 80px;}
   body.project-site .story-intro {margin-bottom: 30px;}
   body.project-site .playlist-section {margin: 0 3% 60px; padding: 40px 7%;}
