@@ -1,1 +1,90 @@
-<!DOCTYPE html><html lang="it"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Contatta Simona Virdieri, psicologa online, per informazioni e appuntamenti di sostegno psicologico. Colloqui dedicati ad ansia, autostima e difficoltà relazionali." /><title>Prenota un colloquio psicologico online | Simona Virdieri</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css?v=4"></head><body><header class="site-header"><a class="brand" href="index.html"><span>SV</span><strong>Simona Virdieri</strong></a><button class="menu-toggle" aria-label="Apri menu"><i></i><i></i></button><nav class="main-nav"><a href="index.html">Home</a><a href="approccio.html">Approccio</a><a href="articoli.html">Articoli</a><a href="progetto.html">Psicoincuffia</a><a class="nav-cta active" href="appuntamento.html">Appuntamento <b>↗</b></a></nav></header><main><section class="contact-page"><div><p class="eyebrow">Contatti</p><h1>Uno <span class="contact-space">spazio</span> per<br><em>iniziare.</em></h1><p>Se senti che è arrivato il momento di prenderti cura di te, puoi scrivermi. Raccontami brevemente di cosa hai bisogno: ti risponderò per concordare un primo colloquio.</p><p>Il primo colloquio online è uno spazio di conoscenza reciproca. Puoi portare le tue domande, i tuoi dubbi e ciò che ti ha condotto qui. Insieme valuteremo il percorso più adatto alle tue esigenze.</p></div><div class="contact-details"><div class="detail"><small>Email</small><a href="mailto:virdierisimona@gmail.com">virdierisimona@gmail.com</a></div><div class="detail"><small>Telefono</small><a href="tel:+393807817759">380 781 7759</a></div><div class="detail"><small>Colloqui</small><p>Solo online su appuntamento</p></div><div class="contact-buttons"><a class="button button-dark" href="mailto:virdierisimona@gmail.com?subject=Richiesta%20di%20appuntamento">Scrivimi una mail <span>↗</span></a><a class="button button-dark" href="https://www.miodottore.it/profilo/simona-virdieri-2" target="_blank" rel="noopener noreferrer">Prenota su MioDottore <span>↗</span></a></div></div></section></main><footer><div class="brand"><span>SV</span><strong>Simona Virdieri</strong></div><p>Psicologa · Specializzanda in psicoterapia sistemico-relazionale</p><p>© <span class="year"></span> Simona Virdieri</p></footer><script src="script.js"></script></body></html>
+<!DOCTYPE html><html lang="it"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Contatta Simona Virdieri, psicologa online, per informazioni e appuntamenti di sostegno psicologico. Colloqui dedicati ad ansia, autostima e difficoltà relazionali." /><title>Prenota un colloquio psicologico online | Simona Virdieri</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css?v=4"></head><body><header class="site-header"><a class="brand" href="index.html"><span>SV</span><strong>Simona Virdieri</strong></a><button class="menu-toggle" aria-label="Apri menu"><i></i><i></i></button><nav class="main-nav"><a href="index.html">Home</a><a href="approccio.html">Approccio</a><a href="articoli.html">Articoli</a><a href="progetto.html">Psicoincuffia</a><a class="nav-cta active" href="appuntamento.html">Appuntamento <b>↗</b></a></nav></header><main><section class="contact-page"><div><p class="eyebrow">Contatti</p><h1>Uno <span class="contact-space">spazio</span> per<br><em>iniziare.</em></h1><p>Se senti che è arrivato il momento di prenderti cura di te, puoi scrivermi. Raccontami brevemente di cosa hai bisogno: ti risponderò per concordare un primo colloquio.</p><p>Il primo colloquio online è uno spazio di conoscenza reciproca. Puoi portare le tue domande, i tuoi dubbi e ciò che ti ha condotto qui. Insieme valuteremo il percorso più adatto alle tue esigenze.</p></div><div class="contact-details"><div class="detail"><small>Email</small><a href="mailto:virdierisimona@gmail.com" class="email-choice-trigger" aria-haspopup="dialog">virdierisimona@gmail.com</a></div><div class="detail"><small>Telefono</small><a href="tel:+393807817759">380 781 7759</a></div><div class="detail"><small>Colloqui</small><p>Solo online su appuntamento</p></div><div class="contact-buttons"><a class="button button-dark email-choice-trigger" href="mailto:virdierisimona@gmail.com?subject=Richiesta%20di%20appuntamento" aria-haspopup="dialog">Scrivimi una mail <span>↗</span></a><a class="button button-dark" href="https://www.miodottore.it/profilo/simona-virdieri-2" target="_blank" rel="noopener noreferrer">Prenota su MioDottore <span>↗</span></a></div></div></section></main><footer><div class="brand"><span>SV</span><strong>Simona Virdieri</strong></div><p>Psicologa · Specializzanda in psicoterapia sistemico-relazionale</p><p>© <span class="year"></span> Simona Virdieri</p></footer><script src="script.js"></script><style>
+/* Scelta della posta: solo nella pagina Appuntamento. */
+.email-choice-overlay[hidden]{display:none!important}
+.email-choice-overlay{position:fixed;inset:0;background:rgba(21,33,44,.46);z-index:1000;display:grid;place-items:center;padding:20px}
+.email-choice-panel{position:relative;width:min(100%,485px);max-height:min(88vh,740px);overflow-y:auto;background:#f9f5f0;color:#222;border-radius:18px;border:1px solid #c8d9e6;box-shadow:0 20px 70px rgba(24,40,54,.24);padding:32px;font:inherit}
+.email-choice-panel h2{font:600 clamp(1.4rem,3vw,1.85rem)/1.2 Roboto,Arial,sans-serif;color:#55718a;margin:0 38px 12px 0}
+.email-choice-panel p{color:#333;line-height:1.6;margin:0 0 18px}
+.email-choice-options{display:grid;gap:10px}
+.email-choice-options a,.email-choice-options button{display:flex;justify-content:space-between;gap:15px;align-items:center;width:100%;padding:13px 16px;border:1px solid #c8d9e6;border-radius:9px;background:#fffdfb;color:#25384a;text-align:left;font:500 1rem Roboto,Arial,sans-serif;text-decoration:none;cursor:pointer;transition:background .2s ease,border-color .2s ease}
+.email-choice-options a:hover,.email-choice-options button:hover{background:#e9f2f8;border-color:#55718a}
+.email-choice-options :is(a,button):focus-visible,.email-choice-close:focus-visible{outline:3px solid #55718a;outline-offset:3px}
+.email-choice-close{position:absolute;top:20px;right:22px;width:35px;height:35px;border:0;border-radius:50%;background:#e9f2f8;color:#25384a;cursor:pointer;font-size:24px;line-height:1}
+.email-choice-panel .email-choice-note{font-size:.85rem;margin:14px 0 0;color:#485463}
+.email-choice-panel .email-choice-status{min-height:22px;margin:10px 0 0;color:#405c75;font-size:.88rem}
+@media(max-width:480px){.email-choice-panel{padding:25px 19px}}
+@media(prefers-reduced-motion:reduce){.email-choice-options a,.email-choice-options button{transition:none}}
+</style>
+<div class="email-choice-overlay" id="email-choice-overlay" hidden>
+  <div class="email-choice-panel" role="dialog" aria-modal="true" aria-labelledby="email-choice-title" aria-describedby="email-choice-description" tabindex="-1">
+    <button type="button" class="email-choice-close" aria-label="Chiudi la scelta email">×</button>
+    <h2 id="email-choice-title">Come preferisci scrivermi?</h2>
+    <p id="email-choice-description">Scegli il servizio che utilizzi per inviare un'email a <strong>virdierisimona@gmail.com</strong>.</p>
+    <div class="email-choice-options">
+      <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=virdierisimona%40gmail.com&amp;su=Richiesta%20di%20appuntamento" target="_blank" rel="noopener noreferrer">Gmail <span aria-hidden="true">↗</span></a>
+      <a href="https://outlook.live.com/mail/0/deeplink/compose?to=virdierisimona%40gmail.com&amp;subject=Richiesta%20di%20appuntamento" target="_blank" rel="noopener noreferrer">Outlook / Hotmail <span aria-hidden="true">↗</span></a>
+      <a href="https://login.libero.it/?service_id=email" target="_blank" rel="noopener noreferrer">Libero Mail <span aria-hidden="true">↗</span></a>
+      <a href="mailto:virdierisimona@gmail.com?subject=Richiesta%20di%20appuntamento">La mia app email predefinita <span aria-hidden="true">↗</span></a>
+      <button type="button" class="email-choice-copy">Copia indirizzo email <span aria-hidden="true">⧉</span></button>
+    </div>
+    <p class="email-choice-note">Per Libero, accedi alla tua casella, premi “Scrivi” e incolla l'indirizzo. Alcuni servizi potrebbero chiederti di accedere.</p>
+    <p class="email-choice-status" id="email-choice-status" role="status" aria-live="polite"></p>
+  </div>
+</div>
+<script>
+(() => {
+  const overlay = document.getElementById('email-choice-overlay');
+  const panel = overlay.querySelector('.email-choice-panel');
+  const close = overlay.querySelector('.email-choice-close');
+  const copy = overlay.querySelector('.email-choice-copy');
+  const status = overlay.querySelector('.email-choice-status');
+  const email = 'virdierisimona@gmail.com';
+  let opener = null;
+  function hide() {
+    overlay.hidden = true;
+    document.body.style.overflow = '';
+    if (opener) opener.focus();
+  }
+  document.querySelectorAll('.email-choice-trigger').forEach(link => {
+    link.addEventListener('click', event => {
+      event.preventDefault();
+      opener = link;
+      status.textContent = '';
+      overlay.hidden = false;
+      document.body.style.overflow = 'hidden';
+      close.focus();
+    });
+  });
+  close.addEventListener('click', hide);
+  overlay.addEventListener('click', event => { if (event.target === overlay) hide(); });
+  document.addEventListener('keydown', event => {
+    if (overlay.hidden) return;
+    if (event.key === 'Escape') {event.preventDefault(); hide();}
+    if (event.key === 'Tab') {
+      const items = [...panel.querySelectorAll('button,a[href]')].filter(el => el.getClientRects().length);
+      const first = items[0], last = items[items.length-1];
+      if (event.shiftKey && document.activeElement === first) {event.preventDefault();last.focus();}
+      else if (!event.shiftKey && document.activeElement === last) {event.preventDefault();first.focus();}
+    }
+  });
+  copy.addEventListener('click', async () => {
+    try {
+      if (navigator.clipboard && window.isSecureContext) await navigator.clipboard.writeText(email);
+      else {
+        const field = document.createElement('textarea');
+        field.value = email;
+        field.style.position = 'fixed';
+        field.style.opacity = '0';
+        document.body.appendChild(field);
+        field.select();
+        const ok = document.execCommand('copy');
+        field.remove();
+        if (!ok) throw new Error('Copia non disponibile');
+      }
+      status.textContent = 'Indirizzo copiato! Puoi incollarlo nella tua email.';
+    } catch (_) {
+      status.textContent = 'Copia non disponibile: seleziona l’indirizzo mostrato sopra.';
+    }
+  });
+})();
+</script></body></html>
